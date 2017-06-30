@@ -6,13 +6,13 @@ class BankAccount
   end
 
   def deposit(amount)
-    new_amount = @balance + amount
-    puts "Your balance is now: #{new_amount}."
+    @balance += amount
+    puts "Your balance is now: #{@balance}."
   end
 
   def withdraw(amount)
-    new_amount = @balance - amount
-    puts "Your balance is now: #{new_amount}."
+    @balance -= amount
+    puts "Your balance is now: #{@balance}."
   end
 
   def gain_interest
