@@ -1,7 +1,7 @@
 class Player
 
   def initialize
-    @gold_coins       = 8
+    @gold_coins       = 0
     @health_points    = 10
     @lives            = 5
   end
@@ -24,6 +24,15 @@ class Player
       @lives -= 1
       @health_points = 10
     end
+    if @lives == 0
+      restart
+    end
+  end
+
+  def restart
+    @gold_coins       = 0
+    @health_points    = 10
+    @lives            = 5
   end
 
 end
