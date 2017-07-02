@@ -19,7 +19,7 @@ class BankAccount
     with_interest = @balance * @interest_rate
     puts "Your balance with interest is: #{with_interest}."
   end
-
+git a
 end
 
 my_account = BankAccount.new(100)
